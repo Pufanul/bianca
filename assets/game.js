@@ -106,7 +106,7 @@ function startGame() {
         document.getElementById('game-container').appendChild(scoreboard);
     }
     score = 0; // Reset the score to 0
-    scoreboard.innerText = `Score: ${score}/30`; // Update the scoreboard display
+    scoreboard.innerText = `Scor: ${score}/30`; // Update the scoreboard display
     gameOver = false;
     obstacles = [];
     frameCount = 0;
@@ -122,7 +122,7 @@ function gameOverFunction() {
     const gameOverScreen = document.getElementById('game-over-screen');
     scoreboard.classList.add('game-over');
     gameOverScreen.insertBefore(scoreboard, gameOverScreen.querySelector('button'));
-    scoreboard.innerText = `Score: ${score}`;
+    scoreboard.innerText = `Scor: ${score}`;
     document.getElementById('game-over-screen').style.display = 'flex';
 }
 
@@ -132,8 +132,9 @@ function showCongratulationScreen() {
     const congratulationScreen = document.createElement('div');
     congratulationScreen.id = 'congratulation-screen';
     congratulationScreen.innerHTML = `
-        <h2>Congratulations!</h2>
-        <p>You have reached 30 points!</p>
+        <h1>Felicitari!</h1>
+        <p>Ai evitat cu succes 30 responsabilitati si ai primit urmatorul indiciu!</p>
+        <p>Trebuie sa mergi la aceste coordonate GPS: </p>
     `;
     document.getElementById('game-container').appendChild(congratulationScreen);
 }
@@ -157,7 +158,7 @@ function animate() {
         if (obstacle.x + obstacle.width < 0) {
             obstacles.splice(index, 1);
             score++;
-            document.getElementById('scoreboard').innerText = `Score: ${score}/30`;
+            document.getElementById('scoreboard').innerText = `Scor: ${score}/30`;
         }
         if (character.x < obstacle.x + obstacle.width &&
             character.x + character.width > obstacle.x &&
