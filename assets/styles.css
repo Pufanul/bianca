@@ -55,12 +55,12 @@ h1, h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 3; /* Ensure this is higher than the canvas and scoreboard */
+  z-index: 3; 
 }
 
 #game-over-screen #scoreboard {
-  position: static; /* Remove absolute positioning */
-  margin-bottom: 20px; /* Add some space between the scoreboard and the button */
+  position: static; 
+  margin-bottom: 20px; 
   transform: none;
 }
 
@@ -122,20 +122,26 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 4; /* Ensure this is higher than other elements */
-  box-sizing: border-box; /* Add this line */
+  z-index: 4;
+  box-sizing: border-box;
 }
 
 #congratulation-screen h2 {
   margin: 0;
   font-size: 2em;
-  text-align: center;
 }
 
 #congratulation-screen p {
   margin: 0;
   font-size: 1.2em;
   text-align: center;
+}
+
+img.depressed {
+  width: 128px; 
+  height: 128px; 
+  display: block; 
+  margin: 0 auto; 
 }
 
 @media (max-width: 600px) {
