@@ -3,23 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jumping Game</title>
+    <title>Evita responsabilitatile</title>
     <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <div id="intro-screen">
-      <h1>Welcome</h1>
+      <h1>Bine ai venit, Bianca!</h1>
       <p>
-        Jump over the obstacles to score points. Press space or tap to jump.
+        Pentru a termina jocul si a primi urmatorul indiciu, trebuie sa eviti cu succes 30 responsabilitati!
       </p>
-      <button id="play-button">Play Now</button>
+      <button id="play-button">Evita responsabilitatile acum!</button>
     </div>
     <div id="game-container" style="display: none;">
       <canvas id="game-canvas"></canvas>
-      <div id="scoreboard">Score: 0</div>
+      <div id="scoreboard">Scor: 0</div>
       <div id="game-over-screen" style="display: none;">
         <h2>Game Over</h2>
-        <button id="retry-button">Retry</button>
+        <button id="retry-button">Mai baga o fisa!</button>
       </div>
     </div>
     <script src="assets/game.js"></script>
