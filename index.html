@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jumping Game</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div id="intro-screen">
+      <h1>Welcome</h1>
+      <p>
+        Jump over the obstacles to score points. Press space or tap to jump.
+      </p>
+      <button id="play-button">Play Now</button>
+    </div>
+    <div id="game-container" style="display: none;">
+      <canvas id="game-canvas"></canvas>
+      <div id="scoreboard">Score: 0</div>
+      <div id="game-over-screen" style="display: none;">
+        <h2>Game Over</h2>
+        <button id="retry-button">Retry</button>
+      </div>
+    </div>
+    <script src="assets/game.js"></script>
+  </body>
+</html>
