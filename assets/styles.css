@@ -123,6 +123,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   z-index: 4; /* Ensure this is higher than other elements */
+  box-sizing: border-box; /* Add this line */
 }
 
 #congratulation-screen h2 {
