@@ -1,6 +1,8 @@
 import { Character } from "./character.js";
 import { Obstacle } from "./obstacle.js";
 
+const discordLink = "https://discord.gg/NVcg6fKa";
+
 const CANVAS_HEIGHT_OFFSET = 200;
 const CHARACTER_WIDTH = 50;
 const CHARACTER_HEIGHT = 50;
@@ -70,7 +72,7 @@ function showCongratulationScreen() {
         <h1>Felicitari!</h1>
         <p>Ai evitat cu succes 30 responsabilitati</p>
         <p>Apasa pe butonul de mai jos pentru a intra pe Discord si a primi urmatorul indiciu</p>
-        <a class="discord" href="https://discord.gg/utcg6f4j">Discord</a>
+        <a class="discord" href=discordLink>Discord</a>
     `;
   document.getElementById("game-container").appendChild(congratulationScreen);
 }
