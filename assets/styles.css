@@ -71,6 +71,7 @@ button {
   cursor: pointer;
   border: 1px solid salmon;
   background-color: rgba(250, 128, 114, 0.15);
+  color: #666;
 }
 
 button:hover {
