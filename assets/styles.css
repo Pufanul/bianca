@@ -129,11 +129,13 @@ button:hover {
 #congratulation-screen h2 {
   margin: 0;
   font-size: 2em;
+  text-align: center;
 }
 
 #congratulation-screen p {
   margin: 0;
   font-size: 1.2em;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
