@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Evita responsabilitatile</title>
+    <title>Evita-ti responsabilitatile</title>
     <link rel="stylesheet" href="assets/styles.css" />
     <link rel="icon" href="resources/icons/favicon.ico" type="image/x-icon" />
   </head>
@@ -11,17 +11,24 @@
     <div id="intro-screen">
       <h1>Bine ai venit, Bianca!</h1>
       <p>
-        Pentru a termina jocul si a primi urmatorul indiciu, trebuie sa eviti cu succes 30 responsabilitati!
+        Pentru a primi cadoul de ziua ta ai nevoie sa aduni cateva indicii.
+        Acest joculet iti va oferi primul indiciu.
       </p>
-      <button id="play-button">Evita responsabilitatile acum!</button>
+      <p>
+        A sosit vremea sa-ti imbratisezi lenea interioara si sa-ti eviti
+        responsabilitatile!
+      </p>
+      <p style="font-style: italic;">Ai nevoie de 30 puncte ca sa castigi si sa primesti urmatorul indiciu!</p>
+      <button id="play-button">Sunt pregatita!</button>
     </div>
-    <div id="game-container" style="display: none;">
+    <div id="game-container" style="display: none">
       <canvas id="game-canvas"></canvas>
       <div id="scoreboard">Scor: 0</div>
-      <div id="game-over-screen" style="display: none;">
-        <h2>Game Over</h2>
-        <p>Ai pierdut dar nu-i nimic, mai apasa pe REPEAT</p>
-        <button id="retry-button">REPEAT</button>
+      <div id="game-over-screen" style="display: none">
+        <h2>Ce-ai facut Bobita?!</h2>
+        <img src="resources/images/depressed-woman.png" class="depressed" />
+        <p>Te-au ajuns responsabilitatile din urma si te-au bagat in depresie...</p>
+        <button id="retry-button">Mai bag o fisa!</button>
       </div>
     </div>
     <script type="module" src="assets/game.js"></script>
