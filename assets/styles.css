@@ -133,7 +133,7 @@ button:hover {
   font-size: 2em;
 }
 
-#congratulation-screen p {
+#congratulation-screen p, #game-over-screen p {
   margin: 0;
   font-size: 1.2em;
   text-align: center;
